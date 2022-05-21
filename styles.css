@@ -176,9 +176,10 @@ body{
 .slide-menu-customers-testimonials{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    min-width: 500px;
 }
+
 
 
 
