@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Smoky Menu</title>
+    <link rel="icon" type="image/x-icon" href="Smoky_Pictures\smoky_logo_1.jpg">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <!------------CSS STYLES------------->
+    <style>
+
+/*--------------------------Code for main container and topnav------------------------*/
+
+.main-container{
+    display: grid;
+    justify-content: space-between;
+    border: 5px;
+    grid-template-columns:1fr;
+}
+/* Navbar Style (New copied) */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width:auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgba(19,147,72,255);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    padding-bottom: 0%;
+    padding-top: 7px;
+    background-color: rgba(19,147,72,255);
+    color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.navbar-brand img{
+    border: 0%;
+    margin: 0%;
+    padding: 0%;
+    align-self: top;
+}
+
+/*--------------------------Code for main container and topnav ends here------------------------*/
+   
+body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: 0px;
+      border: 0px;
+      padding: 0px;
+      background-color: rgb(0, 0, 0);
+}
+
+.Menu-item{
+  display: grid;
+}
+
+.mini-container{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5%;
+}
+
+
+
+
+/*---------TABLE STYLE CSS--------*/
+
+table, th, td {
+  border: 0px solid goldenrod;
+}
+
+table{
+  border-spacing: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.table{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.table th{
+  font-size: x-large;
+	padding-right:30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.table td{
+  font-size: large;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+
+/*-----------Table 2 css style--------*/
+
+.table-2{
+  width: 100%;
+}
+
+.table-2 td{
+  width: 100%;	
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+
+       
+        /* The grid: Three equal columns that floats next to each other */
+.column {
+          float: left;
+          width: auto;
+          padding-left: 60px;
+          padding-right: 60px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          color: white;
+}
+        
+.containerTab {
+          width: auto;
+          padding: 20px;
+          color: white;
+}
+
+.row{
+  display: grid;
+}
+
+        /* Clear floats after the columns */
+.row:after {
+          content: "";
+          display: table;
+          clear: both;
+}
+        
+        /* Closable button inside the container tab */
+.closebtn {
+          float: right;
+          color: white;
+          font-size: 35px;
+          cursor: pointer;
+}
+
+
+/*---------Food list style-----------*/
+.header-item h2{
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.header-item p{
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  
+}
+
+.back-image{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+
+}
+.back-image img{
+  max-width: 100%;
+  min-width: auto;
+  left: 0px;
+  top: 0px;
+ 
+}
+
+.back-image img{
+  min-height: 1400px;
+  max-height: max-content;
+  max-width: 100%;
+}
+
+</style>  
+
+</head>
+<body>
+      <div class="main-container">
+
+                  
+        <div class="back-image">
+                <img src="image-3.jpg">
+        </div>      
+              
+
+        <div class="topnav">
+          <a class="navbar-brand active" href="#restro-details ">
+            <img src="Smoky_Pictures\smoky_logo_1.jpg" alt="..." height="37">
+          </a>
+        
+        <a href="index.html">Smoky Kitchen Restro & Bar</a>
+            
+            <div class="topnav-right">
+                <a href="menu.html">our Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="Contact-Us.html">Contact Us</a>
+            
+            </div>
+        </div>
+      
+        <div class="Menu-item"> 
+
+              <div class="header-item" style="text-align:center">
+                  <h2 style="color: #ffb03b;font-size: 50px;">MENU</h2>
+                  <p style="color: rgb(255, 255, 255);font-size: 30px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">    To view our menu, please choose item on the left side    </p>
+                  
+              </div>
+              
+              <div class="mini-container">
+
+                  <!-- Three columns -->
+                  <div class="row">
+                      <div class="column" onclick="openTab('b1');" style="background:#04aa6df3;">
+                        SPECIAL SMOKY MENU
+                      </div>
+                      <div class="column" onclick="openTab('b2');" style="background:#04aa6ddc;">
+                        SALAD AND SOUP
+                      </div>
+                      <div class="column" onclick="openTab('b3');" style="background:#04aa6dad;">
+                        APPETIZER VEG
+                      </div>
+                      <div class="column" onclick="openTab('b4');" style="background:#04aa6d9f;">
+                        APPETIZER NON-VEG
+                      </div>
+                      <div class="column" onclick="openTab('b5');" style="background:#04aa6d85;">
+                        KHAJA SET
+                      </div>
+                      <div class="column" onclick="openTab('b6');" style="background:#04aa6d9f;">
+                        NEPALI CHULO KHANA SET
+                      </div>
+                      <div class="column" onclick="openTab('b7');" style="background:#04aa6dad;">
+                        HOT n COLD BEVEREGES
+                      </div>
+                      <div class="column" onclick="openTab('b8');" style="background:#04aa6ddc;">
+                        HARD DRINKS MENU
+                      </div>
+                      <div class="column" onclick="openTab('b9');" style="background:#04aa6df3;">
+                        EXQUISITE DRINKS
+                      </div>
+                  </div>
+              
+                  
+
+                  <div class="right-aligned">
+                      <!-- Full-width columns: (hidden by default) -->
+                    <div id="b1" class="containerTab" style="display:none;background:#04aa6df3">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <h2>SPECIAL SMOKY MENU</h2>
+                        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+                        <!--MENU LIST AND PRICES-->
+                        <div class="table">
+                          <table>
+                            <tr>
+                              <th>PIZZA AND BURGER </th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Smoky Specil Pizza (veg or non-veg)</td>
+                              <td>Rs.590</td>
+                            </tr>
+                            <tr>
+                              <td>Margerita</td>
+                              <td>Rs.490</td>
+                            </tr>
+                            <tr>
+                              <td>BBQ Bun (Served with olive, chicken, cheese and vegetables)</td>
+                              <td>Rs.550</td>
+                            </tr>
+
+                            <tr>
+                              <th>Smoky Specil Main Course</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Grilled or Fried Rainbow Trout</td>
+                              <td>Rs.1050/890</td>
+                            </tr>
+
+                            
+                            <tr>
+                              <th>Steak</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Mutton Steak</td>
+                              <td>Rs.950</td>
+                            </tr>
+                            <tr>
+                              <td >Chicken Steak</td>
+                              <td>Rs.650</td>
+                            </tr>
+
+                            
+                            <tr>
+                              <th>Biryani</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td >Mutton Biryani</td>
+                              <td>Rs.650</td>
+                            </tr>
+                            <tr>
+                              <td >Chicken Biryani</td>
+                              <td>Rs.550</td>
+                            </tr>
+                            <tr>
+                              <td >Egg Biryani</td>
+                              <td>Rs.450</td>
+                            </tr>
+
+                            <tr>
+                              <th>Sizller</td>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td >Chicken Sizller</td>
+                              <td>Rs.550</td>
+                            </tr>
+                            <tr>
+                              <td >Fish Sizller</td>
+                              <td>Rs.650</td>
+                            </tr>
+                            
+                            <tr>
+                              <th>Hot Pan Chicken</td>
+                                <th></th>
+                            </tr>
+                            <tr>
+                              <td >Pan Chicken (Served with fresh vegetables and cashew nuts)</td>
+                              <td>Rs.650</td>
+                            </tr>
+                            
+                            <tr>
+                              <th style="font-size:large">Katia</td>
+                                <p style="font-size:small">Cooked on Chulo in traditional nepali fire wood cooking</p>
+                              
+                            </tr>
+                            <tr>
+                              <td >Chicken Katia</td>
+                              <td>Rs.450</td>
+                            </tr>
+                            <tr>
+                              <td >Mutton Katia</td>
+                              <td>Rs.650</td>
+                            </tr>
+
+                            
+                          </table>
+                        </div>
+                    </div>
+                      
+                    <div id="b2" class="containerTab" style="display:none;background:#04aa6ddc">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <h2>SALAD AND SOUP</h2>
+                        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+                        <!--MENU LIST AND PRICES-->
+                        <div class="table">
+                          <table >
+                            <tr>
+                              <th>SALAD</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Smoky Specil veg Salad</td>
+                              <td>Rs.250</td>
+                            </tr>
+                            <tr>
+                              <td>Smoky Specil Non-Veg Salad</td>
+                              <td>Rs.350</td>
+                            </tr>
+                            <tr>
+                              <td>Classic Ceaser Salad</td>
+                              <td>Rs.450</td>
+                            </tr>
+
+                            <tr>
+                              <th>Soup</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Hot and Sour soup</td>
+                              <td>Rs.220</td>
+                            </tr>
+                            <tr>
+                              <td>Chicken Mushroom Soup</td>
+                              <td>Rs.250</td>
+                            </tr>
+                            <tr>
+                              <td>Kwati Soup</td>
+                              <td>Rs.250</td>
+                            </tr>
+
+                          </table>
+                        </div>
+                      </div>
+                      
+                    <div id="b3" class="containerTab" style="display:none;background:#04aa6dad">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <h2>APPETIZER VEG</h2>
+                        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+                        <!--MENU LIST AND PRICES-->
+                        <div class="table">
+                          <table >
+                            <tr>
+                              <th>APPETIZER VEG</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>French Fry</td>
+                              <td>Rs.150</td>
+                            </tr>
+                            <tr>
+                              <td>Cheese Ball</td>
+                              <td>Rs.300</td>
+                            </tr>
+                            <tr>
+                              <td>Tofu Nugget</td>
+                              <td>Rs.250</td>
+                            </tr>
+                            <tr>
+                              <td>Veg Pakoda</td>
+                              <td>Rs.180</td>
+                            </tr>
+                            <tr>
+                              <td>Potato Wedges</td>
+                              <td>Rs.180</td>
+                            </tr>
+                            <tr>
+                              <td>Crunchy Corn</td>
+                              <td>Rs.190</td>
+                            </tr>
+
+                          </table>
+                        </div>
+
+                    </div>
+
+                    <div id="b4" class="containerTab" style="display:none;background:#04aa6d9f">
+                      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                      <h2>APPETIZER NON-VEG</h2>
+                      <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+                      <!--MENU LIST AND PRICES-->
+                      <div class="table">
+                        <table> 
+                          <tr>
+                            <th>APPETIZER NON-VEG</th>
+                            <th></th>
+                          </tr>
+                          <tr>
+                            <td>Buff Sekuwa</td>
+                            <td>Rs.300</td>
+                          </tr>
+                          <tr>
+                            <td>Buff Chilli</td>
+                            <td>Rs.300</td>
+                          </tr>
+                          <tr>
+                            <td>Buff Chhoila</td>
+                            <td>Rs.250</td>
+                          </tr>
+                          <tr>
+                            <td>Buff Sandheko</td>
+                            <td>Rs.250</td>
+                          </tr>
+                          <tr>
+                            <td>Buf Tass</td>
+                            <td>Rs.350</td>
+                          </tr>
+                          <tr>
+                            <td>Chicken Sekuwa</td>
+                            <td>Rs.300</td>
+                          </tr>
+                          <tr>
+                            <td>Chicken Chilli</td>
+                            <td>Rs.350</td>
+                          </tr>
+                          <tr>
+                            <td>Chicken Sandheko</td>
+                            <td>Rs.300</td>
+                          </tr>
+                          <tr>
+                            <td>Chicken Tass</td>
+                            <td>Rs.350</td>
+                          </tr>
+                          <tr>
+                            <td>Chicken Fried</td>
+                            <td>Rs.300</td>
+                          </tr>
+                          
+                          <tr>
+                            <td>Chicken Nugget</td>
+                            <td>Rs.300</td>
+                          </tr>
+                          <tr>
+                            <td>Mutton Tass</td>
+                            <td>Rs.550</td>
+                          </tr>
+                          <tr>
+                            <td>Mutton Sekuwa</td>
+                            <td>Rs.500</td>
+                          </tr>
+                          <tr>
+                            <td>Mutton Chhoila</td>
+                            <td>Rs.500</td>
+                          </tr>
+                          <tr>
+                            <td>Chicken Meat Ball</td>
+                            <td>Rs.300</td>
+                          </tr>
+                          <tr>
+                            <td>Buff Meat Ball</td>
+                            <td>Rs.250</td>
+                          </tr>
+                          <tr>
+                            <td>Chicken Sausage</td>
+                            <td>Rs.250</td>
+                          </tr>
+                          <tr>
+                            <td>Buff Sausage</td>
+                            <td>Rs.200</td>
+                          </tr>
+                                                 
+                        </table>
+                      </div>
+
+                    </div>
+                    
+                    <div id="b5" class="containerTab" style="display:none;background:#04aa6d85">
+                      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                      <h2>KHAJA SET</h2>
+                      <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+                      <!--MENU LIST AND PRICES-->
+                      <div class="table">
+                        <table >
+                          <tr>
+                            <th>Khaja Set</th>
+                            <th></th>
+                          </tr>
+                          <tr>
+                            <td>Duck Khaja Set</td>
+                            <td>Rs.550</td>
+                          </tr>
+                          <tr>
+                            <td>Chicken Khaja Set</td>
+                            <td>Rs.450</td>
+                          </tr>
+                          <tr>
+                            <td>Buff Khaja Set</td>
+                            <td>Rs.400</td>
+                          </tr>
+                          <tr>
+                            <td>Veg Khaja Set</td>
+                            <td>Rs.300</td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </div>
+                    
+                    <div id="b6" class="containerTab" style="display:none;background:#04aa6d9f">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <h2>NEPALI CHULO KHANA SET</h2>
+                        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+                        <!--MENU LIST AND PRICES-->
+                        <div class="table">
+                          <table >
+                            <tr>
+                              <th>Nepali Chulo Khana Set</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Mutton Khana Set</td>
+                              <td>Rs.650</td>
+                            </tr>
+                            <tr>
+                              <td>Chicken Khana Set</td>
+                              <td>Rs.500</td>
+                            </tr>
+                            <tr>
+                              <td>Fish Khana Set</td>
+                              <td>Rs.550</td>
+                            </tr>
+                            <tr>
+                              <td>Prawn Khana Set</td>
+                              <td>Rs.700</td>
+                            </tr>
+                            <tr>
+                              <td>Veg Khana Set</td>
+                              <td>Rs.400</td>
+                            </tr>
+                          </table>
+                        </div>
+                    </div>
+
+                    <div id="b7" class="containerTab" style="display:none;background:#04aa6dad">
+                      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                      <h2>HOT n COLD BEVERAGES</h2>
+                      <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+                      <!--MENU LIST AND PRICES-->
+                      <div class="table">
+                        <table >
+                          <tr>
+                            <th>Soft Drinks</th>
+                            <th></th>
+                          </tr>
+                          <tr>
+                            <td>Coke/Fanta/Sprite</td>
+                            <td>Rs.75</td>
+                          </tr>
+                          <tr>
+                            <td>Red Bull (Energy drink)</td>
+                            <td>Rs.300</td>
+                          </tr>
+                          <tr>
+                            <td>Fresh Lmon soda</td>
+                            <td>Rs.150</td>
+                          </tr>
+                          <tr>
+                            <td>Mineral Water</td>
+                            <td>Rs.30</td>
+                          </tr>
+                          <tr>
+                            <td>Pineapple/Orange Juice</td>
+                            <td>Rs.200</td>
+                          </tr>
+                          <tr>
+                            <th>Hot Beverages</th>
+                            <th></th>
+                          </tr>
+                          <tr>
+                            <td>Espresso (Single/Double shot)</td>
+                            <td>Rs.80/150</td>
+                          </tr>
+                          <tr>
+                            <td>Americano (Single/Double shot)</td>
+                            <td>Rs.80/150</td>
+                          </tr>
+                          <tr>
+                            <td>Cappuchino</td>
+                            <td>Rs.195</td>
+                          </tr>
+                          <tr>
+                            <td>Cafe Latte</td>
+                            <td>Rs.195</td>
+                          </tr>
+                          <tr>
+                            <td>Hot Chocolate</td>
+                            <td>Rs.180</td>
+                          </tr>
+                          
+                          <tr>
+                            <td>Hot Lemon with Honey</td>
+                            <td>Rs.120</td>
+                          </tr>
+                          <tr>
+                            <td>Milk Tea</td>
+                            <td>Rs.80/100</td>
+                          </tr>
+                          <tr>
+                            <td>Black Tea</td>
+                            <td>Rs.60</td>
+                          </tr>
+                          <tr>
+                            <td>Green Tea</td>
+                            <td>Rs.100</td>
+                          </tr>
+                          <tr>
+                            <th>Cold Beverages</th>
+                            <th></th>
+                          </tr>
+                          <tr>
+                            <td>Iced Americano</td>
+                            <td>Rs.110</td>
+                          </tr>
+                          <tr>
+                            <td>Iced Cafe Latte</td>
+                            <td>Rs.175</td>
+                          </tr>
+                          <tr>
+                            <td>Lemon Iced Tea</td>
+                            <td>Rs.120</td>
+                          </tr>
+                          <tr>
+                            <td>Iced Tea</td>
+                            <td>Rs.100</td>
+                          </tr>
+
+                        </table>
+                      </div>
+
+                    </div>
+                    
+                    <div id="b8" class="containerTab" style="display:none;background:#04aa6ddc">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <h2>HARD DRINKS MENU</h2>
+                        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+                        <!--MENU LIST AND PRICES-->
+                        <div class="table">
+                          <table >
+                            <tr>
+                              <th>Classical Shot</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Tequila</td>
+                              <td>Rs.600</td>
+                            </tr>
+                            <tr>
+                              <td>Sambuka</td>
+                              <td>Rs.600</td>
+                            </tr>
+                            <tr>
+                              <td>B-52</td>
+                              <td>Rs.600</td>
+                            </tr>
+                            <tr>
+                              <th>Classical Mocktail</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Virgin Pina Colada</td>
+                              <td>Rs.400</td>
+                            </tr>
+                            <tr>
+                              <td>Smoky Classic</td>
+                              <td>Rs.400</td>
+                            </tr>
+                            <tr>
+                              <th>Classical Cocktail</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Hot Rum Punch</td>
+                              <td>Rs.600</td>
+                            </tr>
+                            <tr>
+                              <td>Campari Sprite</td>
+                              <td>Rs.600</td>
+                            </tr>
+                            <tr>
+                              <th>BEER</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Tuborg</td>
+                              <td>Rs.550</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>Calsberg</td>
+                              <td>Rs.600</td>
+                            </tr>
+                            <tr>
+                              <td>Gorkha/Nepal Ice</td>
+                              <td>Rs.500</td>
+                            </tr>
+                            <tr>
+                              <td>Summersby Apple Cider</td>
+                              <td>Rs.220</td>
+                            </tr>
+                            <tr>
+                              <td>Barahsinghe</td>
+                              <td>Rs.550</td>
+                            </tr>
+                            <tr>
+                              <td>Yeti</td>
+                              <td>Rs.550</td>
+                            </tr>
+                            <tr>
+                              <td>Mustang 330ml</td>
+                              <td>Rs.300</td>
+                            </tr>                       
+
+                          </table>
+
+                          <table class="table-2">
+                            
+                            <tr>
+                              <th>Domestic</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Signature Red</td>
+                              <td>Rs.250</td>
+                              <td>Rs.1600</td>
+                              <td>Rs.3500</td>
+                              <td>Rs.4500</td>
+                            </tr>
+
+                            <tr>
+                              <td>Old Durbar Gold</td>
+                              <td>Rs.200</td>
+                              <td>Rs.1600</td>
+                              <td>Rs.3000</td>
+                              <td>Rs.4000</td>
+                            </tr>
+                            <tr>
+                              <td>Black Chimney</td>
+                              <td>Rs.300</td>
+                              <td>Rs.2050</td>
+                              <td>Rs.4000</td>
+                              <td>Rs.5000</td>
+                            </tr>
+
+                            <tr>
+                              <td>Khukuri Rum</td>
+                              <td>Rs.240</td>
+                              <td>Rs.1400</td>
+                              <td>Rs.2800</td>
+                            </tr>
+                            <tr>
+                              <td>Bhue Riband Gin</td>
+                              <td>Rs.210</td>
+                              <td>Rs.1300</td>
+                              <td>Rs.2550</td>
+                            </tr>
+                            <tr>
+                              <td>Ruslan Vodka</td>
+                              <td>Rs.200</td>
+                              <td>Rs.1250</td>
+                              <td>Rs.2500</td>
+                            </tr>
+                            <tr>
+                              <td>8848 Vodka</td>
+                              <td>Rs.230</td>
+                              <td>Rs.1375</td>
+                              <td>Rs.2700</td>
+                            </tr>
+                            <tr>
+                              <td>Himalaya Aila</td>
+                              <td>Rs.250</td>
+                              <td>Rs.1600</td>
+                              <td>Rs.3000</td>
+                            </tr>
+                            <tr>
+                              <td>Royal Stage</td>
+                              <td>Rs.200</td>
+                              <td>Rs.1250</td>
+                              <td>Rs.4500</td>
+                            </tr>
+                            <tr>
+                              <td>189</td>
+                              <td>Rs.390</td>
+                              <td>Rs.1250</td>
+                              <td>Rs.4500</td>
+                            </tr>
+                            <tr>
+                              <td>Bacardi White Rum</td>
+                              <td>Rs.280</td>
+                              <td>Rs.1500</td>
+                              <td>Rs.3000</td>
+                            </tr>
+                            <tr>
+                              <td>Spice Khukuri Rum</td>
+                              <td>Rs.290</td>
+                              <td>Rs.1740</td>
+                              <td>Rs.3500</td>
+                            </tr>
+                            <tr>
+                              <td>Gurkhas Gun</td>
+                              <td>Rs.350</td>
+                              <td>Rs.2000</td>
+                              <td>Rs.4000</td>
+                            </tr>
+                            <tr>
+                              <td>Signature Red</td>
+                              <td>Rs.250</td>
+                              <td>Rs.1600</td>
+                              <td>Rs.3500</td>
+                            </tr>
+
+                          </table>
+                        </div>
+
+                      </div>
+                      
+                    <div id="b9" class="containerTab" style="display:none;background:#04aa6df3">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <h2>EXQUISITE DRINKS</h2>
+                        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>                        
+                        
+                        <div class="table">
+
+                          <table class="table-2">
+                    
+                            <tr>
+                              <th>Brandy</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Himalayan Brandy</td>
+                              <td>Rs.200</td>
+                              <td>Rs.1400</td>
+                              <td>Rs.2700</td>
+                            </tr>
+
+                            <tr>
+                              <td>Brand Marpha</td>
+                              <td>Rs.190</td>
+                              <td>Rs.1100</td>
+                              <td>Rs.2000</td>
+                            </tr>
+                            <tr>
+                              <td>Bradinet VSOP</td>
+                              <td>Rs.500</td>
+                              <td>Rs.4500</td>
+                              <td>Rs.9000</td>
+                            </tr>
+
+                            <tr>
+                              <th>Gin</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>London Dry Gin</td>
+                              <td>Rs.500</td>
+                              <td>Rs.6000</td>
+                              <td>Rs.10000</td>
+                            </tr>
+
+                            <tr>
+                              <th>Whiskey</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Deluxe Whiskey (Chivas)</td>
+                              <td>Rs.800</td>
+                              <td>Rs.7500</td>
+                              <td>Rs.14000</td>
+                            </tr>
+                            
+                            <tr>
+                              <th>Irish Whiskey</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Jameson</td>
+                              <td>Rs.800</td>
+                              <td>Rs.7000</td>
+                              <td>Rs.14000</td>
+                            </tr>
+                            <tr>
+                              <th>Single Malt</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Glenfiddich</td>
+                              <td>Rs.900</td>
+                              <td>Rs.8500</td>
+                              <td>Rs.15000</td>
+                            </tr>
+
+                            
+                            <tr>
+                              <th>Bourbon Whiskey</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Jack Daniels</td>
+                              <td>Rs.800</td>
+                              <td>Rs.6500</td>
+                              <td>Rs.12500</td>
+                            </tr>
+
+                            <tr>
+                              <td>Jack Daniels Honey</td>
+                              <td>Rs.850</td>
+                              <td>Rs.6800</td>
+                              <td>Rs.13500</td>
+                            </tr>
+
+                            <tr>
+                              <th>Premiumx/Blended</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Double Black Lebel</td>
+                              <td>Rs.900</td>
+                              <td>Rs.7500</td>
+                              <td>Rs.14500</td>
+                            </tr>
+
+                            <tr>
+                              <td>Green Label</td>
+                              <td>Rs.1100</td>
+                              <td>Rs.9500</td>
+                              <td>Rs.18000</td>
+                            </tr>
+                            <tr>
+                              <td>Black Label</td>
+                              <td>Rs.850</td>
+                              <td>Rs.700</td>
+                              <td>Rs.13500</td>
+                            </tr>
+
+                            <tr>
+                              <td>Red Lebel</td>
+                              <td>Rs.700</td>
+                              <td>Rs.5500</td>
+                              <td>Rs.10500</td>
+                            </tr>
+                            <tr>
+                              <td>Bacardi</td>
+                              <td>Rs.700</td>
+                              <td>Rs.5500</td>
+                              <td>Rs.10500</td>
+                            </tr>
+
+                            <tr>
+                              <th>Vodka</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Absolute</td>
+                              <td>Rs.500</td>
+                              <td>Rs.5000</td>
+                              <td>Rs.9000</td>
+                            </tr>
+
+                            <tr>
+                              <td>Sky Vodka</td>
+                              <td>Rs.550</td>
+                              <td>Rs.5000</td>
+                              <td>Rs.9000</td>
+                            </tr>                           
+
+                            <tr>
+                              <th>Rum</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Captain Morgan</td>
+                              <td>Rs.800</td>
+                              <td>Rs.6500</td>
+                              <td>Rs.12000</td>
+                            </tr>
+
+                            <tr>
+                              <td>Molibu</td>
+                              <td>Rs.800</td>
+                              <td>Rs.6500</td>
+                              <td>Rs.9000</td>
+                            </tr>                           
+
+                          </table>
+                        </div>
+
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+        </div>
+
+
+    </div>
+
+    
+
+    <script>
+        function openTab(tabName) {
+          var i, x;
+          x = document.getElementsByClassName("containerTab");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
+

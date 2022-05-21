@@ -1,0 +1,612 @@
+/*Master Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+}
+
+.main-container{
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+}
+
+
+/* Navbar Style (New copied) */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width:auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgba(19,147,72,255);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    padding-bottom: 0%;
+    padding-top: 7px;
+    background-color: rgba(19,147,72,255);
+    color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.navbar-brand img{
+    border: 0%;
+    margin: 0%;
+    padding: 0%;
+    align-self: top;
+}
+
+
+
+/*-----------------  sub-container-01  -----------------*/
+
+
+
+  .Main-page-content-background img{
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 5px;
+    width: auto;
+  }
+  
+  /* The navbar */
+  .Sticky-vertical-float-menu {
+    display: grid;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  .Sticky-vertical-float-menu a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .Sticky-vertical-float-menu a:hover {
+    background-color: rgba(19,147,72,255);
+    color: black;
+  }
+
+/*-----------------  sub-container-02  -----------------*/
+
+.sub-container-02{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.event-details{
+    display: grid;
+    align-self: center;
+    color:#04AA6D;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.event-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 31%;
+    padding-right: 30%;
+    margin-top: 2px;
+}
+
+.event-content h4{
+    justify-content: space-between;
+    padding: 20px;
+}
+.event-details h3{
+    padding-top: 20px;
+}
+
+.Restaurant-advertising-event-flex img{
+    padding: 5px;
+    border: 3px double #04AA6D;
+    height: 100%;
+    width: 90%;
+}
+
+
+
+/*-----------------  sub-container-03  -----------------*/
+
+
+.sub-container-03{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.sub-container-03 h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-style: italic;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+.slide-menu-customers-testimonials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+.card {
+    background-color: rgb(0, 0, 0);
+    min-width: 20%;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: arial;
+    color: #ccc;
+    align-items: stretch;
+}
+
+.card h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.card .title{
+    padding-bottom: 10px;
+    color: #ccc;
+}
+
+.card img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 4px double goldenrod;
+}
+
+
+  .title {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+  button {
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background-color:#04AA6D;
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+/*-----------------  sub-container-04  -----------------*/
+
+.sub-container-04{
+    color: #f2f2f2;
+    padding-left: 40px;
+    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.sub-container-04 h2{
+    padding: 30px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    background-color: rgb(27, 27, 27);
+    color: #dddddd;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border-style: inherit;
+    border: 1px solid #04AA6D; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=email], select, textarea {
+    background-color: rgb(27, 27, 27);
+    color: #dddddd;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border-style: inherit;
+    border: 1px solid #04AA6D; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  
+  /* Style the submit button with a specific background color etc */
+  form button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  /* Add a background color and some padding around the form */
+  .container02 {
+    border-radius: 5px;
+    background-color: black;
+    padding-right: 60px;
+    padding-left: 30px;
+  }
+
+
+
+
+
+/*-----------------  sub-container-05  -----------------*/
+
+.sub-container-05{
+    color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.sub-container-05 form{
+    color: #ccc;
+}
+
+
+
+/*-----------------  sub-container-06  -----------------*/
+
+.sub-container-06{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: black;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+
+.sub-container-06 .Location-info{
+    border-style:inset;
+    border-color: #04AA6D;
+    border-width: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Location-info{
+    width: 20%;
+    color: #04AA6D;
+    padding-left: 20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Location-info h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Location-info h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sub-container-06 .Location-map{
+    padding-right: 20px;
+}
+/* Set the size of the div element that contains the map */
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+
+
+
+
+/*-----------------  sub-container-07  -----------------*/
+
+.sub-container-07{
+    color: #dddddd;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+}
+
+
+.sub-container-07 img{
+    width: 99.66%;
+    border: 5px inset #04AA6D;
+}
+
+
+
+
+
+
+
+/*--------Gallary style--------*/
+
+    
+    .img-container{
+        background-color: #000000;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 8%;
+    }
+
+    .img-gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 30px;
+        
+    }
+    .img-gallery img{
+        border: 3px double #04AA6D;
+        padding: 5px;
+        width: 100%;
+        
+    }
+
+
+
+/*-----------  Menu Item from ""menu.html""  -----------*/
+
+
+.Menu-item{
+    padding-top: 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Nav Styles */
+/*
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    border: 2px solid black;
+}
+.left-side{
+    display: flex;
+}
+
+
+.nav-link-bar-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.nav-link-bar-2>div{
+    margin-right: 8px;
+}
+
+.nav-bar>.left-side>div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.nav-link-bar{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-link-bar a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-link-bar:hover{
+    border-bottom: 1px solid black;
+}
+.nav-link-bar a:hover{
+    color: black;
+}
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+*/
+
+
+/*Content-wrapper Styles 
+
+.Left-top-vertical-menu{
+    display: grid;
+}
+
+.Sticky-float-menu-and-bottom-Logo{
+    border: 2px solid black;
+    display: grid;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.Left-top-vertical-menu{
+    align-items: flex-start;
+    padding-left: 25px;
+    border: 5px;
+}
+
+.laft-bottom-logo-icon{
+    display: right;
+    margin: 20px;
+    padding-left: 2000px;
+    border: 5px;
+}
+
+.Main-page-content-background{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    height: fit-content;
+    padding: 100px;
+}
+
+.Restaurant-advertising-event-flex{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    height: fit-content;
+    padding: 100px;
+}
+
+.event-details{
+    display: grid;
+    align-items: center;
+    border: 2px solid black;
+    padding: 100px;
+}
+
+.event-content{
+    display: flex;
+    margin-right: 5px;
+}
+
+*/
