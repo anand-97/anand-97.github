@@ -20,109 +20,81 @@ body{
 }
 
 
+
+
+  
+
+/*-----------------  sub-container-01  -----------------*/
+
+  .Main-page-content-background img{
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
 /* Navbar Style (New copied) */
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: rgba(57, 57, 57, 0.681);
-    overflow: hidden;
-    width:100%;
-    height: 50px;
-    flex-wrap: wrap;
+  background-color: rgba(57, 57, 57, 0.681);
+  overflow: hidden;
+  width:100%;
+  height: 50px;
+  flex-wrap: wrap;
 }
 
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  font-family:'Segoe UI', Tahoma,  Verdana, sans-serif;
-  float: left;
-  color: #f2f2f2;
-  text-align: center; 
-  padding: 14px 10px 0;
-  text-decoration: none;
-  font-size: large;
+font-family:'Segoe UI', Tahoma,  Verdana, sans-serif;
+float: left;
+color: #f2f2f2;
+text-align: center; 
+padding: 14px 10px 0;
+text-decoration: none;
+font-size: large;
 }
 
 
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  align-items: stretch;
-  color: rgba(19,147,72,255);
+align-items: stretch;
+color: rgba(19,147,72,255);
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    padding-bottom: 0%;
-    padding-top: 13px;
-    background-color: rgba(19,147,72,255);
-    color: white;
+  padding-bottom: 0%;
+  padding-top: 13px;
+  background-color: rgba(19,147,72,255);
+  color: white;
 }
 
 /* Right-aligned section inside the top navigation */
 .topnav-right {
-  float: right;
+float: right;
 }
 
 .navbar-brand img{
-    border: 0%;
-    margin: 0%;
-    padding-bottom: 2px;
-    padding-top: 0%;
-    align-self: center;
-    align-items: stretch;
+  border: 0%;
+  margin: 0%;
+  padding-bottom: 2px;
+  padding-top: 0%;
+  align-self: center;
+  align-items: stretch;
 
 }
-
-
-
-/*-----------------  sub-container-01  -----------------*/
-
-
-
-  .Main-page-content-background img{
-    padding: 0px;
-    height: 100%;
-    width: 100%;
-}
-
-  
-  /* Position the navbar container inside the image */
-  .container {
-    position: absolute;
-    margin-left: 0px;
-    margin-top: 5px;
-    width: auto;
-  }
-  
-  /* The navbar */
-  .Sticky-vertical-float-menu {
-    display: grid;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Navbar links */
-  .Sticky-vertical-float-menu a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .Sticky-vertical-float-menu a:hover {
-    background-color: rgba(19,147,72,255);
-    color: black;
-  }
-
 /*-----------------  sub-container-02  -----------------*/
 
 .sub-container-02{
     padding-top: 70px;
     padding-bottom: 30px;
     display: grid;
+    justify-content: center;
     align-content: center;
     text-align: center;
 }
@@ -156,7 +128,8 @@ body{
     padding: 5px;
     border: 3px double #04AA6D;
     height: 100%;
-    width: 90%;
+    width: 95%;
+    border-radius: 20%;  /*border around sub-container 2 image*/
 }
 
 
@@ -167,84 +140,69 @@ body{
 .sub-container-03{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     padding-top: 80px;
     padding-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
 }
 
+.customers-testimonials{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 3% 0; 
+  justify-content:space-around;
+}
+
 .sub-container-03 h2{
-    color: rgb(255, 255, 255);
+    color: #04AA6D;
     font-size: 40px;
     font-style: italic;
     padding-top: 5%;
     padding-bottom: 5%;
     
 }
-.slide-menu-customers-testimonials{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    min-width: 500px;
+
+
+.container00 {
+  border: 2px solid #04AA6D;
+  background-color: rgb(27, 27, 27);
+  color: #f2f2f2;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
 }
 
-
-
-
-.card {
-    background-color: rgb(0, 0, 0);
-    min-width: 20%;
-    flex-wrap: wrap;
-    text-align: center;
-    font-family: arial;
-    color: #ccc;
-    align-items: stretch;
+.container00::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.card h1{
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-.card .title{
-    padding-bottom: 10px;
-    color: #ccc;
+.container00 img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
-.card img{
-    max-width: 200px;
-    border-radius: 50%;
-    border: 4px double goldenrod;
+.container00 span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.container00 p{
+  font-size: 15px;
 }
 
-
-  .title {
-    color: rgb(0, 0, 0);
-    font-size: 18px;
+@media (max-width: 500px) {
+  .container00 {
+      text-align: center;
   }
-  
-  button {
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: rgb(255, 255, 255);
-    background-color:#04AA6D;
-    text-align: center;
-    cursor: pointer;
-    width: 90%;
-    font-size: 18px;
+  .container00 img {
+      margin: auto;
+      float: none;
+      display: block;
   }
-  
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-  }
-  
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
-
+}
 
 
 
@@ -255,7 +213,7 @@ body{
     padding-left: 40px;
     padding-bottom: 60px;
     padding-top: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .sub-container-04 h2{
@@ -292,7 +250,7 @@ input[type=text], select, textarea {
   
   
   /* Style the submit button with a specific background color etc */
-   input[type=submit] {
+  input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
@@ -303,7 +261,7 @@ input[type=text], select, textarea {
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
-   input[type=submit]:hover {
+  input[type=submit]:hover {
     background-color: #45a049;
   }
   
@@ -324,14 +282,96 @@ input[type=text], select, textarea {
 
 .sub-container-05{
     color: #ffffff;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 100px;
     padding-left: 30px;
     padding-right: 30px;
 }
-.sub-container-05 form{
-    color: #ccc;
+
+.slide-menu-customers-testimonials{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
 }
+
+.sub-container-05 h2{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #04AA6D;
+  
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+.snip1574 {
+  font-family: 'Lato', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.snip1574 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1574 img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.7;
+}
+
+.snip1574 figcaption {
+  position: absolute;
+  top: 30;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 10% 10%;
+}
+
+
+
+.snip1574 blockquote {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.snip1574 h3 {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+
+.snip1574 h5 {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+
 
 
 
@@ -443,46 +483,6 @@ input[type=text], select, textarea {
     padding-top: 0px;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
